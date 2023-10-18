@@ -13,10 +13,10 @@ Hello World in Assembly designed for x86-64 Linux
 This code is the lowest possible level of describing the hello world program as assembly is just human readable machine code.
 This code may seem overwhelming at first but in reality it is quite simple, just without the abstractions you are used to from other languages.  
 
-If you run `make dump` you will see the assembly for the hello world C program.
-This is *without* the included header `stdio.h`. You can see this code is much more complicated but the C file seems more simple.
-This is due to the abstraction layer that the C standard library provides.
-Understanding assembly allows us to write more efficient code even in higher level languages like C.  
+If you run `make dump` you will see the dissasembly of both binaries.
+Look at the difference between the two of them.
+One of them is a few lines but the other one is incredibly long and complicated.
+This is caused by the complex abstractions provided by `stdio.h`.
 
 ## How does it work?
 First of all we define the entry point to our program. In this program we choose `_start`.
