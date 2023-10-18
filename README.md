@@ -2,10 +2,10 @@
 Hello World in Assembly designed for x86-64 Linux
 
 ## Dependencies
-- nasm assembler
+- an assembler
 - objdump
-- cc
-- a bash shell
+- a c compiler
+- make
 
 ## Why?
 This code is the lowest possible level of describing the hello world program as assembly is just human readable machine code. This code may seem overwhelming at first but in reality it is quite simple, just without the abstractions you are used to from other languages.  
