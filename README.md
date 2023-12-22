@@ -31,13 +31,13 @@ The second move operation specifies where we are going to write data to.
 In this case we write it to the STDOUT.
 Then we specify the size of the write operation.
 We simply specify it as the size of `Hello, world!\n`.
-After this we syscall so our write takes effect.  
+After this we syscall so the kernel executes our code.
 
 After the syscall we enter a new part of our program, the exit stage.
 Here we exit our program returning a success exit code.
-Then we syscall again moving onto the final section of our code.  
+Then we syscall again invoking the kernel to finish our program.
 
-The final stage of our code declares the variables used in the _start function.
+The final area of our code declares the variables used in the _start function.
 It is much easier to use variables here especially for the memory operation.
 The variable declaration syntax is reasonably simple, `name: value` in most situations.  
 
